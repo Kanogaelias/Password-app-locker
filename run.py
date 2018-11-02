@@ -40,3 +40,29 @@ def display_data(data,number):
     Function that displays the user data
     '''
     return UsersData.display_data(data,number)
+
+
+def data_existing(data):
+    '''
+    Function that checks if user data exists
+    '''
+    return UsersData.existing_data(data)
+
+def password_generator(count):
+    '''
+    Function that generates a password
+    '''
+    pass_list=[]
+    round = 1
+    while round<=count:
+        gen_password = random.choice(string.ascii_lowercase + string.digits + string.ascii_uppercase )
+        pass_list.append(gen_password)
+        round+=1
+    return ''.join(pass_list)
+
+def copy_password(number,count):
+    '''
+    Function that copies the password to the clipboard
+    '''
+    UsersData.copy_password(number,count)
+    
