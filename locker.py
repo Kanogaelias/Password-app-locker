@@ -1,4 +1,4 @@
-import pyperclip
+# import pyperclip
 class Credentials:
     '''
     Class that creates accounts and authenticates the users
@@ -13,7 +13,7 @@ class Credentials:
         self.user_name = user_name
         self.password = password
 
-            def create_account(self):
+    def create_account(self):
         '''
         creating and saving log in credentials for the various users
         '''
@@ -41,7 +41,7 @@ class UsersData:
         self.website = website
         self.web_key = web_key
 
-def add_password(self):
+    def add_password(self):
         '''
         creating a method that creates the username and password
         '''
@@ -58,7 +58,7 @@ def add_password(self):
                 if password.data_id == count:
                     return password
     
-        @classmethod
+    @classmethod
     def existing_data(cls,number):
         '''
         Checks if data exists in the profile

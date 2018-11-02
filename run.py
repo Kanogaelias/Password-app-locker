@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.6
 import string,random,time
-from locker import Credentials,UsersData
+from locker import Credentials
+from locker import UsersData
 
 def new_account(id,user_name,password):
     '''
@@ -8,7 +9,7 @@ def new_account(id,user_name,password):
     '''
     new_user = Credentials(id,user_name,password)
     return new_user
-
+    
 def create_user(user):
     '''
     Function that saves the user's credentials

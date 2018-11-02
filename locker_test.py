@@ -33,7 +33,7 @@ class TestCredentials(unittest.TestCase):
         self.new_user.create_account()
         self.assertEqual(len(Credentials.users_list),1)
     
-        def test_authenticate(self):
+    def test_authenticate(self):
         '''
         Testing to check if the authenticate function can sign in a user properly
         '''
@@ -100,7 +100,7 @@ class TestUserData(unittest.TestCase):
         data_exists = UsersData.existing_data(1)
         self.assertTrue(data_exists)
 
-            def test_copy_password(self):
+    def test_copy_password(self):
         '''
         Testing if the copy password function works
         '''
