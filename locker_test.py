@@ -59,3 +59,20 @@ class TestUserData(unittest.TestCase):
         Cleans up the test after test is complete
         '''
         UsersData.data_list = []
+
+            
+    def test_init(self):
+        '''
+        Test case to evaluate if the case has been initialized properly
+        '''
+        self.assertEqual(self.new_data.ident,1)
+        self.assertEqual(self.new_data.data_id,1)
+        self.assertEqual(self.new_data.website,"facebook.com")
+        self.assertEqual(self.new_data.web_key,"poiii")
+
+    def test_add_password(self):
+        '''
+        Testing if the new website and password can be saved
+        '''
+        self.new_data.add_password()
+        self.assertEqual(len(UsersData.data_list),1)
