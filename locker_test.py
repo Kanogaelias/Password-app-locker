@@ -99,3 +99,16 @@ class TestUserData(unittest.TestCase):
 
         data_exists = UsersData.existing_data(1)
         self.assertTrue(data_exists)
+
+            def test_copy_password(self):
+        '''
+        Testing if the copy password function works
+        '''
+        self.new_data.add_password()
+        UsersData.copy_password(1,1)
+
+        self.assertEqual(self.new_data.web_key,pyperclip.paste())
+
+
+if __name__ == "__main__":
+    unittest.main()
