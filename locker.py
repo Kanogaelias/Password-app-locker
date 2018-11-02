@@ -58,3 +58,17 @@ def add_password(self):
                 if password.data_id == count:
                     return password
     
+        @classmethod
+    def existing_data(cls,number):
+        '''
+        Checks if data exists in the profile
+        '''
+        for data in cls.data_list:
+            if data.ident == number:
+                return True
+        return False
+    
+    @classmethod
+    def copy_password(cls,number,count):
+        found_password = UsersData.display_data(number,count)
+        pyperclip.copy(found_password.web_key)
