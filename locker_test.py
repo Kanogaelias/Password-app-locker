@@ -10,7 +10,7 @@ class TestCredentials(unittest.TestCase):
         Setting up the structure before each test
         '''
         self.new_user = Credentials(1,"richie","uiui")
-        
+
     def tearDown(self):
         '''
         Cleans up after each test has run
@@ -24,3 +24,12 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_user.identify,1)
         self.assertEqual(self.new_user.user_name,"richie")
         self.assertEqual(self.new_user.password,"uiui")
+
+
+    def test_create(self):
+        '''
+        Testing if the new credential is saved into the list
+        '''
+        self.new_user.create_account()
+        self.assertEqual(len(Credentials.users_list),1)
+    
