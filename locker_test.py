@@ -33,3 +33,13 @@ class TestCredentials(unittest.TestCase):
         self.new_user.create_account()
         self.assertEqual(len(Credentials.users_list),1)
     
+        def test_authenticate(self):
+        '''
+        Testing to check if the authenticate function can sign in a user properly
+        '''
+        self.new_user.create_account()
+        test_account = Credentials(1,"Test","Password")
+        test_account.create_account()
+
+        found_user = Credentials.authenticate_account("Test","Password")
+        self.assertEqual(found_user.identify , test_account.identify)
