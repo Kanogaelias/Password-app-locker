@@ -1,7 +1,7 @@
 # PasswordLocker
 ## Password locker is a simple python app that generates passwords for different user accounts
-### May 4th, 2018
-#### By **[Richard Waweru](https://github.com/devwaweru)**
+### November 2nd, 2018
+#### By **[Kanogaelias](https://github.com/Kanogaelias/Password-app-locker)**
 
 ## Description
 Password Locker is an application that helps users generate and store passwords on their multiple accounts.
@@ -45,7 +45,7 @@ No known errors if found drop a message on my profile
     - Python 3.6
 
 ## Support and contact details
-Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
+Contact me on developer.kanogae@gmail.com for any comments, reviews or advice.
 
 ### License
-Copyright (c) **Richard Waweru**
+Copyright (c) **ELIAS KANOGA**
