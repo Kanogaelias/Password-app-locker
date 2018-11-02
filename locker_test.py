@@ -76,3 +76,26 @@ class TestUserData(unittest.TestCase):
         '''
         self.new_data.add_password()
         self.assertEqual(len(UsersData.data_list),1)
+
+
+    def test_display_data(self):
+        '''
+        Testing if the data can be displayed.
+        '''
+        self.new_data.add_password()
+        test_data = UsersData(1,1,"facebook.com","poiii")
+        test_data.add_password()
+
+        data_found = UsersData.display_data(1,1)
+        self.assertEqual(data_found.website,test_data.website)
+    
+    def test_data_exists(self):
+        '''
+        Testing to check if the function for checking data works well
+        '''
+        self.new_data.add_password()
+        test_data = UsersData(1,1,"facebook.com","poiii")
+        test_data.add_password()
+
+        data_exists = UsersData.existing_data(1)
+        self.assertTrue(data_exists)
