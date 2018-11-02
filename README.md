@@ -45,7 +45,7 @@ No known errors if found drop a message on my profile
     - Python 3.6
 
 ## Support and contact details
-Contact me on developer.waweru@gmail.com for any comments, reviews or advice.
+Contact me on developer.kanogae@gmail.com for any comments, reviews or advice.
 
 ### License
 Copyright (c) **ELIAS KANOGA**
