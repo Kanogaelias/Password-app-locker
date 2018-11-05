@@ -23,7 +23,7 @@ The user will be met with the following commands while signing in:
 | Behavior            | Input                         | Output                        | 
 | ------------------- | ----------------------------- | ----------------------------- |
 | Create new account | Type: cc <br>Username: ELIAS <br>Password: pass | User ELIAS has been created.<br>Log in to Continue |
-| Sign in | Type: ss <br>Username: ELIAS<br>Password: pass | Welcome Richi! What would you like to do? |
+| Sign in | Type: ss <br>Username: ELIAS<br>Password: pass | Welcome ELIAS! What would you like to do? |
 | Add Password | Type: ad <br>Website: mywebsite.com <br>Length of password: 10 | **Generates a password with x length**<br>Your password for mywebsite.com is eyDB58eh49 |
 | View list of passwords | Type: vp | Generates a lists of websites and passwords |
 | Copy Password to clipboard | Type: cp <br>Enter index: 1 | Password 1 on the list has been copied and is ready for pasting |
