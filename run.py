@@ -73,9 +73,9 @@ def main():
     Main function
     '''
     my_id=0
-    # my_data_id = 0
+    
     entries = []
-    # print(password_generator(10))
+    
     print("\n")
     print("       Welcome to password Locker")
     print("-"*40)
@@ -119,7 +119,7 @@ def main():
                         print("How long do you want the password to be?")
                         password_length = int(input("Length of password: "))
                         my_webkey = password_generator(password_length)
-                        # my_data_id = my_data_id+1
+                      
                         my_ident = get_result.identify
                         add_data(my_new_data(my_ident,entries[my_ident],my_website,my_webkey))
                         entries[my_ident]=entries[my_ident]+1
@@ -127,7 +127,6 @@ def main():
                         time.sleep(1.5)
                         print("\n")
                         print(f"***Your password for {my_website} is {my_webkey}***")
-                        # print(f"This is the {entries[my_ident]} entry")MKBViStksX 0h5SzxJxQe fOTSiyEZuQ
                         print("-"*45)
 
                     elif get_input == "vp":
